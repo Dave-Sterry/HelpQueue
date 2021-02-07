@@ -1,5 +1,5 @@
 import React from "react";
-// import TicketList from "./TicketList";
+import PropTypes from "prop-types";
 
 function Ticket(props){
   return (
@@ -10,5 +10,10 @@ function Ticket(props){
     </React.Fragment>
   );
 }
+Ticket.propTypes = {
+  names: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  issue: PropTypes.string
+};
 
 export default Ticket;
